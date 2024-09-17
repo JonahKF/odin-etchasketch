@@ -5,6 +5,11 @@ function setGrid(){
         for(let e = 0; e < 16; e++){
             const div = document.createElement("div");
             div.setAttribute("id", "child");
+
+            div.addEventListener('mouseenter',() => {
+                div.setAttribute("style", "background-color: black;");
+            });
+
             container.appendChild(div);
         }
     }
