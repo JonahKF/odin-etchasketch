@@ -7,7 +7,7 @@ function setGrid(size) {
     div.setAttribute("style", "flex: 0 0 " + (100 / size) + "%;");
 
     div.addEventListener("mouseenter", () => {
-        div.style.backgroundColor = "black";
+        div.style.backgroundColor = "rgb(" + Math.random() * (255 - 0) + 0 + ", " + Math.random() * (255 - 0) + 0 + ", " + Math.random() * (255 - 0) + 0 + ")";
     });
 
     container.appendChild(div);
