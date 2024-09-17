@@ -20,7 +20,13 @@ setGrid(16);
 //When Reset Button is Pressed:
 const reset = document.querySelector("#btn");
 reset.addEventListener("click", () => {
-    let newSize = prompt();
+    let newSize = 0;
+    while(newSize === 0 || newSize > 100){
+        newSize = Number(prompt());
+        if(newSize > 100){
+            alert("Please enter a maximum value of 100.");
+        }
+    }
     const divs = document.querySelectorAll("#child");
     divs.forEach(div => {
         div.remove(); 
