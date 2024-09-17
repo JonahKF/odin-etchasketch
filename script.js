@@ -5,9 +5,11 @@ function setGrid(size) {
     const div = document.createElement("div");
     div.setAttribute("id", "child");
     div.setAttribute("style", "flex: 0 0 " + (100 / size) + "%;");
+    div.style.opacity = .1;
 
     div.addEventListener("mouseenter", () => {
         div.style.backgroundColor = "rgb(" + Math.random() * (255 - 0) + 0 + ", " + Math.random() * (255 - 0) + 0 + ", " + Math.random() * (255 - 0) + 0 + ")";
+        div.style.opacity -= '-0.1';
     });
 
     container.appendChild(div);
