@@ -3,12 +3,15 @@
     padding: 0;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+}
+
 #container{
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
-    height: 80vh;
+    width: 860px;
 }
 
 #child{

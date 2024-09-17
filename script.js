@@ -10,5 +10,7 @@ function setGrid(){
     }
 }
 
+
+
 //Start Etch-a-Sketch
 setGrid();
